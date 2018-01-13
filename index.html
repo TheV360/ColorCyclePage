@@ -21,11 +21,12 @@
 			html {
 				animation: infinite linear 60s heck;
 			}
-			textarea {
+			textarea, input {
 				background: rgba(255,255,255,.9);
 				text-color: black;
 				font-family: monospace;
 				font-size: 24px;
+				width: 32em;
 			}
 		</style>
 		<script>
@@ -35,7 +36,7 @@
 	<body>
 		<div style="display:flex;justify-content:center;align-items:center;">
 			<textarea placeholder="Take some notes..."></textarea>
-			<br />
+			<hr />
 			<input type="text" id="searchText" placeholder="...or search for something." />
 			<input type="button" id="searchGo" value="🔎" />
 		</div>
