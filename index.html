@@ -21,15 +21,20 @@
 			html {
 				animation: infinite linear 60s heck;
 			}
+			div {
+				width: 36em;
+				margin: 0 auto;
+				justify-content: center;
+				align-items: center;
+			}
 			textarea, input {
 				display: block;
-				height: 1.5em;
+				font-size: 24px;
 			}
 			textarea, input[type="text"] {
 				background: rgba(255,255,255,.9);
 				text-color: black;
 				font-family: monospace;
-				font-size: 24px;
 				width: 32em;
 			}
 		</style>
@@ -42,11 +47,11 @@
 		</script>
 	</head>
 	<body>
-		<div style="margin: 0 auto; justify-content: center; align-items: center;">
+		<div>
 			<textarea placeholder="Take some notes..."></textarea>
 			<br />
 			<input type="text" id="searchText" placeholder="...or search for something." />
-			<input type="button" id="searchGo" value="🔎" />
+			<input type="submit" id="searchGo" value="🔎" />
 		</div>
 	</body>
 </html>
