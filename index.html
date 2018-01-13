@@ -21,7 +21,8 @@
 			html {
 				animation: infinite linear 60s heck;
 			}
-			textarea, input {
+			textarea, input[type="text"] {
+				display: block;
 				background: rgba(255,255,255,.9);
 				text-color: black;
 				font-family: monospace;
@@ -30,7 +31,11 @@
 			}
 		</style>
 		<script>
-			document.getElementById("searchGo").onclick = function() {document.location = "https://encrypted.google.com/?q=" + document.getElementById("searchText").value;};
+			window.onload = function() {
+				document.getElementById("searchGo").onclick = function() {
+					document.location = "https://encrypted.google.com/?q=" + document.getElementById("searchText").value;
+				};
+			};
 		</script>
 	</head>
 	<body>
