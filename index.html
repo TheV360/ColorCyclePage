@@ -28,10 +28,16 @@
 				font-size: 24px;
 			}
 		</style>
+		<script>
+			document.getElementById("searchGo").onclick = function() {document.location = "https://encrypted.google.com/?q=" + document.getElementById("searchText").value;};
+		</script>
 	</head>
 	<body>
 		<div style="display:flex;justify-content:center;align-items:center;">
 			<textarea placeholder="Take some notes..."></textarea>
+			<br />
+			<input type="text" id="searchText" placeholder="...or search for something." />
+			<input type="button" id="searchGo" value="🔎" />
 		</div>
 	</body>
 </html>
